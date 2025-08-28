@@ -16,15 +16,19 @@ interface Message {
 }
 
 export default function DailyFantasySavant() {
-  const [messages, setMessages] = useState<Message[]>([
-    {
-      id: "1",
-      content:
-        "Welcome to Daily Fantasy Savant! I'm your AI assistant for all things daily fantasy sports. Ask me about player projections, lineup strategies, or any DFS questions you have!",
-      isUser: false,
-      timestamp: new Date(),
-    },
-  ])
+  const [messages, setMessages] = useState<Message[]>([])
+  
+  useEffect(() => {
+    setMessages([
+      {
+        id: "1",
+        content:
+          "Welcome to Daily Fantasy Savant! I'm your AI assistant for all things daily fantasy sports. Ask me about player projections, lineup strategies, or any DFS questions you have!",
+        isUser: false,
+        timestamp: new Date(),
+      },
+    ])
+  }, [])
   const [inputValue, setInputValue] = useState("")
   const [isLoading, setIsLoading] = useState(false)
   const messagesContainerRef = useRef<HTMLDivElement>(null)
@@ -53,18 +57,41 @@ export default function DailyFantasySavant() {
     setInputValue("")
     setIsLoading(true)
 
-    // Simulate AI response
-    setTimeout(() => {
+    try {
+      const response = await fetch('/api/chat', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ message: inputValue }),
+      })
+
+      if (!response.ok) {
+        throw new Error('Failed to get response')
+      }
+
+      const data = await response.json()
+      
       const aiResponse: Message = {
         id: (Date.now() + 1).toString(),
-        content:
-          "That's a great question about daily fantasy sports! Based on current player trends and matchup analysis, I'd recommend focusing on players with high target shares and favorable game scripts. Would you like me to dive deeper into specific positions or strategies?",
+        content: data.response,
+        isUser: false,
+        timestamp: new Date(data.timestamp),
+      }
+      
+      setMessages((prev) => [...prev, aiResponse])
+    } catch (error) {
+      console.error('Error sending message:', error)
+      const errorMessage: Message = {
+        id: (Date.now() + 1).toString(),
+        content: "Sorry, I encountered an error processing your request. Please try again.",
         isUser: false,
         timestamp: new Date(),
       }
-      setMessages((prev) => [...prev, aiResponse])
+      setMessages((prev) => [...prev, errorMessage])
+    } finally {
       setIsLoading(false)
-    }, 1500)
+    }
   }
 
   const handleKeyPress = (e: React.KeyboardEvent) => {
@@ -135,7 +162,7 @@ export default function DailyFantasySavant() {
             <Input
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}
-              onKeyPress={handleKeyPress}
+              onKeyDown={handleKeyPress}
               placeholder="Ask me about daily fantasy sports strategies, player analysis, or lineup optimization..."
               className="flex-1 bg-input border-border focus:border-primary focus:ring-2 focus:ring-ring shadow-lg transition-all duration-300 focus:shadow-xl focus:shadow-primary/20"
               disabled={isLoading}
