@@ -1,0 +1,417 @@
+{
+  "game_id": "401671789",
+  "date": "2024-09-06T00:40Z",
+  "status": "Final",
+  "venue": "GEHA Field at Arrowhead Stadium",
+  "attendance": 73611,
+  "teams": {
+    "KC": {
+      "name": "Kansas City Chiefs",
+      "home_away": "home",
+      "record": "1-0"
+    },
+    "BAL": {
+      "name": "Baltimore Ravens",
+      "home_away": "away",
+      "record": "0-1"
+    }
+  },
+  "final_score": {
+    "KC": 27,
+    "BAL": 20
+  },
+  "team_statistics": {
+    "BAL": {
+      "1st Downs": "25",
+      "Passing 1st downs": "11",
+      "Rushing 1st downs": "13",
+      "1st downs from penalties": "1",
+      "3rd down efficiency": "7-14",
+      "4th down efficiency": "1-2",
+      "Total Plays": "74",
+      "Total Yards": "452",
+      "Yards per Play": "6.1",
+      "Total Drives": "10",
+      "Passing": "267",
+      "Comp/Att": "26/41",
+      "Yards per pass": "6.4",
+      "Interceptions thrown": "0",
+      "Sacks-Yards Lost": "1-6",
+      "Rushing": "185",
+      "Rushing Attempts": "32",
+      "Yards per rush": "5.8",
+      "Red Zone (Made-Att)": "1-4",
+      "Penalties": "7-64",
+      "Turnovers": "1",
+      "Fumbles lost": "1",
+      "Defensive / Special Teams TDs": "0",
+      "Possession": "33:43"
+    },
+    "KC": {
+      "1st Downs": "21",
+      "Passing 1st downs": "15",
+      "Rushing 1st downs": "4",
+      "1st downs from penalties": "2",
+      "3rd down efficiency": "4-9",
+      "4th down efficiency": "0-0",
+      "Total Plays": "50",
+      "Total Yards": "353",
+      "Yards per Play": "7.1",
+      "Total Drives": "10",
+      "Passing": "281",
+      "Comp/Att": "20/28",
+      "Yards per pass": "9.4",
+      "Interceptions thrown": "1",
+      "Sacks-Yards Lost": "2-10",
+      "Rushing": "72",
+      "Rushing Attempts": "20",
+      "Yards per rush": "3.6",
+      "Red Zone (Made-Att)": "1-3",
+      "Penalties": "6-45",
+      "Turnovers": "1",
+      "Fumbles lost": "0",
+      "Defensive / Special Teams TDs": "0",
+      "Possession": "26:17"
+    }
+  },
+  "scoring_plays": [
+    {
+      "quarter": 1,
+      "time": "8:14",
+      "team": "BAL",
+      "description": "Derrick Henry 5 Yd Run (Justin Tucker Kick)",
+      "away_score": 7,
+      "home_score": 0
+    },
+    {
+      "quarter": 1,
+      "time": "5:55",
+      "team": "KC",
+      "description": "Xavier Worthy 21 Yd Run (Harrison Butker Kick)",
+      "away_score": 7,
+      "home_score": 7
+    },
+    {
+      "quarter": 2,
+      "time": "13:37",
+      "team": "KC",
+      "description": "Harrison Butker 32 Yd Field Goal  ",
+      "away_score": 7,
+      "home_score": 10
+    },
+    {
+      "quarter": 2,
+      "time": "5:44",
+      "team": "KC",
+      "description": "Harrison Butker 31 Yd Field Goal  ",
+      "away_score": 7,
+      "home_score": 13
+    },
+    {
+      "quarter": 2,
+      "time": "0:03",
+      "team": "BAL",
+      "description": "Justin Tucker 25 Yd Field Goal  ",
+      "away_score": 10,
+      "home_score": 13
+    },
+    {
+      "quarter": 3,
+      "time": "11:28",
+      "team": "KC",
+      "description": "Isiah Pacheco 1 Yd Run (Harrison Butker Kick)",
+      "away_score": 10,
+      "home_score": 20
+    },
+    {
+      "quarter": 4,
+      "time": "14:47",
+      "team": "BAL",
+      "description": "Isaiah Likely 49 Yd pass from Lamar Jackson (Justin Tucker Kick)",
+      "away_score": 17,
+      "home_score": 20
+    },
+    {
+      "quarter": 4,
+      "time": "10:25",
+      "team": "KC",
+      "description": "Xavier Worthy 35 Yd pass from Patrick Mahomes (Harrison Butker Kick)",
+      "away_score": 17,
+      "home_score": 27
+    },
+    {
+      "quarter": 4,
+      "time": "4:54",
+      "team": "BAL",
+      "description": "Justin Tucker 32 Yd Field Goal  ",
+      "away_score": 20,
+      "home_score": 27
+    }
+  ],
+  "player_statistics": {
+    "BAL": {
+      "passing": [
+        {
+          "name": "Lamar Jackson",
+          "position": "",
+          "stats": {
+            "C/ATT": "26/41",
+            "YDS": "273",
+            "AVG": "6.7",
+            "TD": "1",
+            "INT": "0",
+            "SACKS": "1-6",
+            "QBR": "62.6",
+            "RTG": "90.8"
+          }
+        }
+      ],
+      "rushing": [
+        {
+          "name": "Lamar Jackson",
+          "position": "",
+          "stats": {
+            "CAR": "16",
+            "YDS": "122",
+            "AVG": "7.6",
+            "TD": "0",
+            "LONG": "16"
+          }
+        },
+        {
+          "name": "Derrick Henry",
+          "position": "",
+          "stats": {
+            "CAR": "13",
+            "YDS": "46",
+            "AVG": "3.5",
+            "TD": "1",
+            "LONG": "9"
+          }
+        },
+        {
+          "name": "Zay Flowers",
+          "position": "",
+          "stats": {
+            "CAR": "2",
+            "YDS": "14",
+            "AVG": "7.0",
+            "TD": "0",
+            "LONG": "8"
+          }
+        }
+      ],
+      "receiving": [
+        {
+          "name": "Isaiah Likely",
+          "position": "",
+          "stats": {
+            "REC": "9",
+            "YDS": "111",
+            "AVG": "12.3",
+            "TD": "1",
+            "LONG": "49",
+            "TGTS": "12"
+          }
+        },
+        {
+          "name": "Rashod Bateman",
+          "position": "",
+          "stats": {
+            "REC": "2",
+            "YDS": "53",
+            "AVG": "26.5",
+            "TD": "0",
+            "LONG": "38",
+            "TGTS": "5"
+          }
+        },
+        {
+          "name": "Justice Hill",
+          "position": "",
+          "stats": {
+            "REC": "6",
+            "YDS": "52",
+            "AVG": "8.7",
+            "TD": "0",
+            "LONG": "18",
+            "TGTS": "8"
+          }
+        }
+      ],
+      "defensive": [
+        {
+          "name": "Roquan Smith",
+          "position": "",
+          "stats": {
+            "TOT": "7",
+            "SOLO": "4",
+            "SACKS": "0",
+            "TFL": "1",
+            "PD": "1",
+            "QB HTS": "0",
+            "TD": "0"
+          }
+        },
+        {
+          "name": "Marcus Williams",
+          "position": "",
+          "stats": {
+            "TOT": "6",
+            "SOLO": "5",
+            "SACKS": "0",
+            "TFL": "0",
+            "PD": "1",
+            "QB HTS": "0",
+            "TD": "0"
+          }
+        },
+        {
+          "name": "Trenton Simpson",
+          "position": "",
+          "stats": {
+            "TOT": "5",
+            "SOLO": "2",
+            "SACKS": "0.5",
+            "TFL": "0",
+            "PD": "1",
+            "QB HTS": "2",
+            "TD": "0"
+          }
+        }
+      ]
+    },
+    "KC": {
+      "passing": [
+        {
+          "name": "Patrick Mahomes",
+          "position": "",
+          "stats": {
+            "C/ATT": "20/28",
+            "YDS": "291",
+            "AVG": "10.4",
+            "TD": "1",
+            "INT": "1",
+            "SACKS": "2-10",
+            "QBR": "68.9",
+            "RTG": "101.9"
+          }
+        }
+      ],
+      "rushing": [
+        {
+          "name": "Isiah Pacheco",
+          "position": "",
+          "stats": {
+            "CAR": "15",
+            "YDS": "45",
+            "AVG": "3.0",
+            "TD": "1",
+            "LONG": "5"
+          }
+        },
+        {
+          "name": "Xavier Worthy",
+          "position": "",
+          "stats": {
+            "CAR": "1",
+            "YDS": "21",
+            "AVG": "21.0",
+            "TD": "1",
+            "LONG": "21"
+          }
+        },
+        {
+          "name": "Patrick Mahomes",
+          "position": "",
+          "stats": {
+            "CAR": "2",
+            "YDS": "3",
+            "AVG": "1.5",
+            "TD": "0",
+            "LONG": "4"
+          }
+        }
+      ],
+      "receiving": [
+        {
+          "name": "Rashee Rice",
+          "position": "",
+          "stats": {
+            "REC": "7",
+            "YDS": "103",
+            "AVG": "14.7",
+            "TD": "0",
+            "LONG": "33",
+            "TGTS": "9"
+          }
+        },
+        {
+          "name": "Xavier Worthy",
+          "position": "",
+          "stats": {
+            "REC": "2",
+            "YDS": "47",
+            "AVG": "23.5",
+            "TD": "1",
+            "LONG": "35",
+            "TGTS": "3"
+          }
+        },
+        {
+          "name": "Noah Gray",
+          "position": "",
+          "stats": {
+            "REC": "3",
+            "YDS": "37",
+            "AVG": "12.3",
+            "TD": "0",
+            "LONG": "13",
+            "TGTS": "3"
+          }
+        }
+      ],
+      "defensive": [
+        {
+          "name": "Jaylen Watson",
+          "position": "",
+          "stats": {
+            "TOT": "11",
+            "SOLO": "7",
+            "SACKS": "0",
+            "TFL": "0",
+            "PD": "1",
+            "QB HTS": "0",
+            "TD": "0"
+          }
+        },
+        {
+          "name": "Justin Reid",
+          "position": "",
+          "stats": {
+            "TOT": "9",
+            "SOLO": "8",
+            "SACKS": "0",
+            "TFL": "0",
+            "PD": "0",
+            "QB HTS": "0",
+            "TD": "0"
+          }
+        },
+        {
+          "name": "Nick Bolton",
+          "position": "",
+          "stats": {
+            "TOT": "7",
+            "SOLO": "3",
+            "SACKS": "0",
+            "TFL": "0",
+            "PD": "1",
+            "QB HTS": "0",
+            "TD": "0"
+          }
+        }
+      ]
+    }
+  }
+}
